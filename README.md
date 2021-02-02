@@ -6,8 +6,3 @@ Whether you have a home in Bangalore or have just rented a room here, you’ll f
 
 RentoMojo makes it effortless for you to rent from us. All you need to do is pick out the products you like, add them to your cart, and then check out. Our team will deliver your rental items directly to your home and also install them for you. We offer fast delivery to all parts of Bangalore, including locations such as Bangalore Bazaar, Malleswaram, Doorvavinagar, Bangalore Sub Foreign Post, and Agara.
 
-Technologies Used:
-HTML
-CSS
-JavaScript
-Github
