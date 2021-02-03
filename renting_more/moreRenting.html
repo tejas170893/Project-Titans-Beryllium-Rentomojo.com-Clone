@@ -7,12 +7,138 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
       rel="stylesheet">
     <title>Document</title>
-    <!-- <style>
-    </style> -->
-    <link rel="stylesheet" href="./rentingmore/rentingmore.css"/>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+#moreRentings{
+    padding: 5vh;
+    border-radius: 5px;
+    box-shadow: 0px 1px 1px 1px;
+}
+.more__renting{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding: 2vh;
+    color:#313131;
+    /* font-family: 'Yusei Magic', sans-serif; */
+}
+.renting__border__line{
+    border: 1px solid red;
+    background-color: red;
+    width: 6vh;
+    height: 0.7px;
+}
+
+/* #47a6a2 */
+#knowmore__btn{
+    color: #47a6a2 ;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+#moreRentings > h2{
+    color:#313131;
+}
+#moreRentings > h2 > p{
+    font-size: 20px;
+    font-style: italic;
+}
+
+#customer__review{
+    padding: 2vh;
+    color:#313131; 
+    display: flex;
+    /* border: 3px red dashed; */
+}
+.customer__review__subscriber {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    color: #313131;
+}
+
+#customer__review > .customer__review__subscriber {
+    color: #313131;
+    font-size: 19px;
+    padding: 54px;
+    margin: 32px;
+}
+.customer__review__subscriber  > h2 + p {
+    color: #313131;
+    font-size: 23px;
+
+}
+.customer__review__name{
+    margin: 0px 2vh;
+    text-align: left;
+    background-color: #f5f7fa;
+    border-radius: 9px;
+    padding: 33px;
+    box-shadow: 6px 6px 6px 6px;
+}
+#customer__review__nameslist  >  .customer__review__item{
+    display: flex;
+    flex:1;
+    justify-content: space-between;
+    width: 100%;
+    height: 600px;
+    margin-top: 37px;
+    font-size: 2.2vh;
+    
+}
+.customer__review__nameSplit{
+    display: flex;
+    flex: 1;
+    margin-top: 30px;
+}
+.customer__review__nameSplit > img {
+    border: 1px solid grey;
+    border-radius: 45px;
+    padding: 4px;
+    width: 42px;
+    height: 57px;
+    margin-top: 25px;
+    margin-left: 12px;
+    text-size-adjust: auto;
+    box-shadow: 3px 3px 3px 1px ;
+    color: #313131;
+}
+.customer__review__nameSplit > h5 {
+    padding: 23px;
+}
+
+@media screen and  (max-width: 600px){
+.more__renting > .more__renting__product{
+    float: none;
+    width: 100%;
+}
+br{
+    display: none;
+  }
+.more__renting__product_1{
+    border: 1px solid whitesmoke;
+    background-color: dodgerblue;
+    display: none;
+ }
+}
+
+
+@media screen and  (max-width: 600px){
+.customer__review__name > p{
+        width: 500px;
+        height: 120px;
+        font-size: 12px;
+    }
+ 
+}
+
+
+    </style>
+    <!-- <link rel="stylesheet" href="./rentingmore/rentingmore.css"/> -->
 </head>
 <body>
     <div>
+        <!--  -->
         <!-- more times -->
     <div id="moreRentings">
         <h2> There'r more <p>to renting</p>  </h2>
@@ -82,18 +208,20 @@
                    </div>
                     <p> A customer review is a review of a product or service made by a customer who has purchased and used, or had experience with, 
                        the product or service. Customer reviews are a form of customer feedback on electronic
-                        commerce and online shopping sites. A customer review is a review of a product or service made by a customer who has purchased and used, or had experience with, the product or service. Customer reviews are a form of customer feedback on electronic commerce and online shopping sites.</p>
+                        commerce and online shopping sites. A customer review is a review of a product or service made by a customer who has purchased and used, or had experience with, the product or service. Customer reviews are a form of customer feedback on electronic commerce and online shopping sites.
+                    </p>
                 </div>
                </div>
                <div class="customer__review__name">
-                   <div class="customer__review__naveen">
+                  <div class="customer__review__naveen">
                     <div class="customer__review__nameSplit">
                         <img src="./img/freemaintenance.png"> 
                         <h5>kushal</h5>
                    </div>
                     <p> A customer review is a review of a product or service made by a customer who has purchased and used, or had experience with, 
                         the product or service. Customer reviews are a form of customer feedback on electronic
-                         commerce and online shopping sites. A customer review is a review of a product or service made by a customer who has purchased and used, or had experience with, the product or service. Customer reviews are a form of customer feedback on electronic commerce and online shopping sites.</p>
+                         commerce and online shopping sites. A customer review is a review of a product or service made by a customer who has purchased and used, or had experience with, the product or service. Customer reviews are a form of customer feedback on electronic commerce and online shopping sites.
+                      </p>
                    </div>
                </div>
                <div class="customer__review__name">
@@ -101,8 +229,8 @@
                      <div class="customer__review__nameSplit">
                         <img src="./img/freemaintenance.png"> 
                         <h5>kushal</h5>
-                   </div>
-                    <p> A customer review is a review of a product or service made by a customer who has purchased and used, or had experience with, 
+                     </div>
+                     <p> A customer review is a review of a product or service made by a customer who has purchased and used, or had experience with, 
                         A customer review is a review of a product or service made by a customer who has purchased and used, or had experience with, 
                         .A customer review is a review of a product or service made by a customer who has purchased and used, or had experience with, </p>
                    </div>

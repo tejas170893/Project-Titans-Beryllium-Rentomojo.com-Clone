@@ -32,7 +32,8 @@ p {
     font-size: 19px;
 }
 p.hoverOnP:hover, p.hoverOnP:active {
-    text-decoration: underline;
+    text-decoration: underline; 
+    cursor: pointer;
 }
 .secondContainerBox4 p {
     cursor: pointer;
