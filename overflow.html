@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin:0%;
+        padding:0%;
+    }
+    .front__carousol img{
+        width:80%;
+        height:80%;
+    }
+    .background{
+        background-color:rgb(245,247,250);
+        height:80vh;
+        width: 87.7vw;
+        padding: 100px 0 0 150px;
+        /* margin-left: 100px; */
+
+    }
+    .card__container::-webkit-scrollbar {
+        display: none;
+        }
+    .card__container{
+        /* padding-left:150px; */
+        height:49vh;
+        margin-top: 15px;
+        /* border:1px solid; */
+        display: flex;
+        max-width: 90vw;
+        overflow-x: scroll;
+        /* padding-left: 150px; */
+        scroll-behavior: smooth;
+
+    }
+    .cards{
+        height:86%;
+        min-width: 17%;
+        border:1px solid rgb(237, 240, 243);
+        background-color:white;
+        padding: 20px 15px;
+        margin:0px 30px 0px 0px;
+    }
+    .cards>img{
+        height:68%;
+        width:100%
+    }
+    h3{
+        font-family: sans-serif;
+        font-size: 18px;
+        color:#333;
+        font-weight: 300;
+    }
+    .inner__card{
+        font-family: sans-serif;
+    }
+    .inner__card>ul{
+        list-style-type: none;
+        margin:0%;
+        padding:0%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .inner__card>ul>li{
+        display: inline;
+        font-size:14px
+    }
+    .inner__card>ul>li:first-of-type{
+        color:#333;
+    }
+    .inner__card>ul>li:last-of-type{
+        border: 1px solid #dc3226;
+        padding: 5px 15px;
+        color: #dc3226;
+    }
+    .inner__card>ul>li>p{
+        margin: 0%;
+        font-size:12px;
+        color: #a2a2a2;
+    }
+   
+    .extra>div{
+        margin: 0%;
+    }
+    .extra h3{
+        margin: 0px 0px 7px 0px;
+        font-size:22px;
+        color:#313131;
+        /* margin-bottom: ; */
+        
+    }
+    .extra__bottom__h3{
+        border-bottom: 2px solid #dc3226;
+        
+    }
+    .fontawesome__circle{
+    padding: 10px 16px;
+        border-radius: 50%;
+        border: 1px solid #333;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .far{
+        color: #333;
+    }
+    .extra__bottom{
+        display: flex;
+        justify-content: space-between;
+    }
+    .buttons{
+        margin-right: 280px;
+    }
+
+    /* <!-- <-----------------carousel start---------------------->  */
+        .mySlides {
+    display: none
+}
+
+.slideshow-container {
+  width: 85vw;
+  height: 80%;
+  position: relative;
+  margin: auto;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: white;
+  /* border-radius:20px; */
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 10px 0 0 10px;
+}
+.prev {
+background-color: white;
+  border-radius: 0 10px 10px 0;
+}
+
+
+/* Number text (1/3 etc) */
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.slideshow-container img{
+    height:180%;
+    width: 100%;
+    border-radius: 20px;
+    vertical-align: middle;
+}
+
+
+/* <!-- <------------------carousel ends------------------------------------> */
+
+
+</style>
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<body>
+    <!-- <-----------------carousel start----------------------> 
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="https://s.rmjo.in/home-banner__gray.png" >
+            </div>
+            <div class="mySlides fade">
+                <img src="https://s.rmjo.in/HP-web.png" >
+            </div>
+        <!-- <div class="mySlides fade">
+          <img src="" style="width:100%">
+        </div> -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+              </div>
+        </div>
+        <br>
+
+
+    <!-- <------------------carousel ends------------------------------------>
+    <div class="background">
+        <div class="extra">
+            <h3>You'll love to</h3>
+            <div class="extra__bottom">
+                <h3 class="extra__bottom__h3">take these home</h3>
+                <div class="buttons">
+                    <i class="far fa-angle-left fa-1x fontawesome__circle btnleft"></i>
+                    <i class="far fa-angle-right fa-1x fontawesome__circle btnright"></i>
+                </div>
+            </div>
+        </div>
+        <div class="card__container">
+            <div class="cards">
+                <img src="https://p.rmjo.in/productSquare/9um0ego3-500x500.jpg" alt="">
+                <h3>Apple iPhone X</h3>
+                <div class="inner__card">
+                    <ul>
+                        <li>
+                            <p>Rent</p>
+                              &#8377  2299/mo</li>
+                        <li>See more</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://p.rmjo.in/productSquare/hint8o7v-500x500.jpg" alt="">
+                <h3>Apple iPhone X</h3>
+                <div class="inner__card">
+                    <ul>
+                        <li>
+                            <p>Rent</p>
+                              &#8377  2299/mo</li>
+                        <li>See more</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://p.rmjo.in/productSquare/hc4dc706-500x500.jpg" alt="">
+                <h3>Apple iPhone X</h3>
+                <div class="inner__card">
+                    <ul>
+                        <li>
+                            <p>Rent</p>
+                              &#8377  2299/mo</li>
+                        <li>See more</li>
+                    </ul>
+                </div>
+            </div>
+             <div class="cards">
+                <img src="https://p.rmjo.in/productSquare/05gpq2h8-500x500.jpg" alt="">
+                <h3>Apple iPhone X</h3>
+                <div class="inner__card">
+                    <ul>
+                        <li>
+                            <p>Rent</p>
+                              &#8377  2299/mo</li>
+                        <li>See more</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://p.rmjo.in/productSquare/l6xann5r-500x500.jpg" alt="">
+                <h3>Apple iPhone X</h3>
+                <div class="inner__card">
+                    <ul>
+                        <li>
+                            <p>Rent</p>
+                              &#8377  2299/mo</li>
+                        <li>See more</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://p.rmjo.in/productSquare/hc4dc706-500x500.jpg" alt="">
+                <h3>Apple iPhone X</h3>
+                <div class="inner__card">
+                    <ul>
+                        <li>
+                            <p>Rent</p>
+                              &#8377  2299/mo</li>
+                        <li>See more</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cards">
+                <img src="https://p.rmjo.in/productSquare/9um0ego3-500x500.jpg" alt="">
+                <h3>Apple iPhone X</h3>
+                <div class="inner__card">
+                    <ul>
+                        <li>
+                            <p>Rent</p>
+                              &#8377  2299/mo</li>
+                        <li>See more</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://p.rmjo.in/productSquare/hint8o7v-500x500.jpg" alt="">
+                <h3>Apple iPhone X</h3>
+                <div class="inner__card">
+                    <ul>
+                        <li>
+                            <p>Rent</p>
+                              &#8377  2299/mo</li>
+                        <li>See more</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://p.rmjo.in/productSquare/hc4dc706-500x500.jpg" alt="">
+                <h3>Apple iPhone X</h3>
+                <div class="inner__card">
+                    <ul>
+                        <li>
+                            <p>Rent</p>
+                              &#8377  2299/mo</li>
+                        <li>See more</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://p.rmjo.in/productSquare/9um0ego3-500x500.jpg" alt="">
+                <h3>Apple iPhone X</h3>
+                <div class="inner__card">
+                    <ul>
+                        <li>
+                            <p>Rent</p>
+                              &#8377  2299/mo</li>
+                        <li>See more</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://p.rmjo.in/productSquare/hint8o7v-500x500.jpg" alt="">
+                <h3>Apple iPhone X</h3>
+                <div class="inner__card">
+                    <ul>
+                        <li>
+                            <p>Rent</p>
+                              &#8377  2299/mo</li>
+                        <li>See more</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://p.rmjo.in/productSquare/hc4dc706-500x500.jpg" alt="">
+                <h3>Apple iPhone X</h3>
+                <div class="inner__card">
+                    <ul>
+                        <li>
+                            <p>Rent</p>
+                              &#8377  2299/mo</li>
+                        <li>See more</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://p.rmjo.in/productSquare/9um0ego3-500x500.jpg" alt="">
+                <h3>Apple iPhone X</h3>
+                <div class="inner__card">
+                    <ul>
+                        <li>
+                            <p>Rent</p>
+                              &#8377  2299/mo</li>
+                        <li>See more</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://p.rmjo.in/productSquare/hint8o7v-500x500.jpg" alt="">
+                <h3>Apple iPhone X</h3>
+                <div class="inner__card">
+                    <ul>
+                        <li>
+                            <p>Rent</p>
+                              &#8377  2299/mo</li>
+                        <li>See more</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://p.rmjo.in/productSquare/hc4dc706-500x500.jpg" alt="">
+                <h3>Apple iPhone X</h3>
+                <div class="inner__card">
+                    <ul>
+                        <li>
+                            <p>Rent</p>
+                              &#8377  2299/mo</li>
+                        <li>See more</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://p.rmjo.in/productSquare/9um0ego3-500x500.jpg" alt="">
+                <h3>Apple iPhone X</h3>
+                <div class="inner__card">
+                    <ul>
+                        <li>
+                            <p>Rent</p>
+                              &#8377  2299/mo</li>
+                        <li>See more</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://p.rmjo.in/productSquare/hint8o7v-500x500.jpg" alt="">
+                <h3>Apple iPhone X</h3>
+                <div class="inner__card">
+                    <ul>
+                        <li>
+                            <p>Rent</p>
+                              &#8377  2299/mo</li>
+                        <li>See more</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://p.rmjo.in/productSquare/hc4dc706-500x500.jpg" alt="">
+                <h3>Apple iPhone X</h3>
+                <div class="inner__card">
+                    <ul>
+                        <li>
+                            <p>Rent</p>
+                              &#8377  2299/mo</li>
+                        <li>See more</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://p.rmjo.in/productSquare/9um0ego3-500x500.jpg" alt="">
+                <h3>Apple iPhone X</h3>
+                <div class="inner__card">
+                    <ul>
+                        <li>
+                            <p>Rent</p>
+                              &#8377  2299/mo</li>
+                        <li>See more</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://p.rmjo.in/productSquare/hint8o7v-500x500.jpg" alt="">
+                <h3>Apple iPhone X</h3>
+                <div class="inner__card">
+                    <ul>
+                        <li>
+                            <p>Rent</p>
+                              &#8377  2299/mo</li>
+                        <li>See more</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://p.rmjo.in/productSquare/hc4dc706-500x500.jpg" alt="">
+                <h3>Apple iPhone X</h3>
+                <div class="inner__card">
+                    <ul>
+                        <li>
+                            <p>Rent</p>
+                              &#8377  2299/mo</li>
+                        <li>See more</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://p.rmjo.in/productSquare/9um0ego3-500x500.jpg" alt="">
+                <h3>Apple iPhone X</h3>
+                <div class="inner__card">
+                    <ul>
+                        <li>
+                            <p>Rent</p>
+                              &#8377  2299/mo</li>
+                        <li>See more</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://p.rmjo.in/productSquare/hint8o7v-500x500.jpg" alt="">
+                <h3>Apple iPhone X</h3>
+                <div class="inner__card">
+                    <ul>
+                        <li>
+                            <p>Rent</p>
+                              &#8377  2299/mo</li>
+                        <li>See more</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://p.rmjo.in/productSquare/hc4dc706-500x500.jpg" alt="">
+                <h3>Apple iPhone X</h3>
+                <div class="inner__card">
+                    <ul>
+                        <li>
+                            <p>Rent</p>
+                              &#8377  2299/mo</li>
+                        <li>See more</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://p.rmjo.in/productSquare/9um0ego3-500x500.jpg" alt="">
+                <h3>Apple iPhone X</h3>
+                <div class="inner__card">
+                    <ul>
+                        <li>
+                            <p>Rent</p>
+                              &#8377  2299/mo</li>
+                        <li>See more</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://p.rmjo.in/productSquare/hint8o7v-500x500.jpg" alt="">
+                <h3>Apple iPhone X</h3>
+                <div class="inner__card">
+                    <ul>
+                        <li>
+                            <p>Rent</p>
+                              &#8377  2299/mo</li>
+                        <li>See more</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://p.rmjo.in/productSquare/hc4dc706-500x500.jpg" alt="">
+                <h3>Apple iPhone X</h3>
+                <div class="inner__card">
+                    <ul>
+                        <li>
+                            <p>Rent</p>
+                              &#8377  2299/mo</li>
+                        <li>See more</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+
+
+    <script>
+
+window.addEventListener("load",execute)
+function execute(){
+    document.querySelector(".slideshow-container").addEventListener("mouseleave",leave)
+    document.querySelector(".slideshow-container").addEventListener("mouseenter",enter)
+    leave()
+        let btnleft=document.querySelector(".btnleft")
+        let btnright=document.querySelector(".btnright")
+        btnright.addEventListener("click",scrollright)
+        btnleft.addEventListener("click",scrollleft)
+}
+
+
+        
+
+        function scrollright(){
+            console.log("object")
+            document.querySelector(".card__container").scrollBy(250,0)
+            document.querySelector(".card__container").style.padding="0px"
+        }
+        function scrollleft(){
+            console.log("object")
+            document.querySelector(".card__container").scrollBy(-250,0)
+        }
+// -------------------------------carousel start
+
+
+let sliding
+function leave(){
+    console.log("leave")
+    sliding =  setInterval(showSlidess, 3000)
+}
+function enter(){
+    console.log("enter")
+    clearInterval(sliding)
+}
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+var showSlidess=function() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+
+
+
+    </script>
+</body>
+</html>
