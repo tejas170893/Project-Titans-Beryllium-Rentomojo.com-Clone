@@ -1,0 +1,20 @@
+body {
+    font-family: Muli,sans-serif;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    border: 1px solid #787878;
+    align-items: center;
+    margin: 90px auto;
+    padding: 30px 30px 30px 30px  ;
+}
+.items {
+    margin: 10px;
+    align-items: center;
+}
+p {
+    margin: auto;
+    color: #787878;
+}
