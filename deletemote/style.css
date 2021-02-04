@@ -1,0 +1,76 @@
+#container__delete{
+    background-color: #e9eef3;
+    width: 60vh;
+    height: 40vh;
+    margin: 190px 630px;
+    color:#333;
+    font-size:19px;
+    border-radius: 25px;
+}
+.container__mattress{
+    padding: 1px 51px;
+    margin-top: 5px;
+}
+.container__mattress > p{
+    font-weight: inherit;
+}
+.container__mattress_2{
+    display: flex;
+    flex: 1;
+}
+.container__mattress_2 > button{
+    padding: 20px 75px;
+    margin: 40px 2px;
+    border: 1px solid #dc3d31;
+    border-radius:5px;
+    color: #dc3d31;
+    background-color: white;
+    cursor: pointer;
+}
+#container__mattress__delete{
+    background-color: #dc3d31;
+    color:white;
+    margin-left:10px;
+    cursor: pointer;
+}
+.container__mattress_indivbtn{
+    background-color: #ffffff;
+    width: 92%;
+    height: 10vh;
+    border-radius: 10px;
+    margin-top: 12px;
+}
+.smalllinfo__delete{
+    display: flex;
+    flex: 1;
+    font-size: 12px;
+    padding: 19px;
+    margin-top: -12px;
+}
+img{
+    height: 40px;
+    width: 32px;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 7px;
+    margin-left: 12px;
+    font-size: 19px;
+}
+.cancel_or_delete{
+    font-size: 17px;
+    margin-left: 7px;
+    font: 120;
+}
+.h{
+    display: flex;
+    margin:-10px 1px;
+    
+}
+.RentDepo{
+    padding-left: 9px;
+    margin:1px -1px;
+    font-size: 15px;
+}
+.RentDepo > span{
+    color: grey ;
+}

@@ -26,13 +26,13 @@
     }
 
     #furniture__filter__reset {
-        /* border: 1px solid whitesmoke; */
+        border:1px solid #e7e7e7;
         padding-left: 40px;
-        width: 47vh;
+        width: 42vh;
         /* margin-left: -22px; */
         margin-top: 12px;
-        border: 1px solid red;
         /* box-shadow: 1px 5px 5px 0px; */
+        /* box-shadow: 1px 1px 1px 0px; */
     }
 
     #furniture__filter__reset>p {
@@ -48,25 +48,26 @@
     #furniture__checkbox {
         display: flex;
         flex: 1;
-        margin: 10px -10px;
+        margin: 5px -15px;
+        padding-left: -15px;
         font-family: 'Montserrat', sans-serif;
         font-size: 7px;
      }
 
     #furniture__checkbox>input {
-        margin: 10px 15px;
+        margin: 5px 10px;
     }
 
 
 
     #furniture__checkbox>p {
-        margin: 10px 15px;
+        margin: 2px 2px;
 
     }
 
     #furniture__filter__reset>.filterbtn {
         /* border: 1px solid red; */
-        background-color: whitesmoke;
+        
         font-size: 22px;
         font-family: 'Nanum Gothic', sans-serif;
         color: #333333;
@@ -74,13 +75,15 @@
         border-radius: 5px;
     }
 
-    #furniture__filter__reset>input+p>span {
+    #furniture__filter__reset>p>span {
         padding-left: 12px;
-        margin-left: 12px;
+        margin: 12px;
+        /* font-family: 'Nanum Gothic', sans-serif; */
+        font-size: 2px;
     }
 
     #showless {
-        color: dodgerblue;
+        color: #ade6e8;
         border: 1px solid transparent;
         box-shadow: 5px;
         text-decoration: underline;
@@ -90,6 +93,8 @@
         margin-left: 42px;
         padding: 12px;
         font-size: 16px;
+        text-decoration: none;
+        font-size: 19px;
     }
 
     #furniture__checkbox+hr {
@@ -103,18 +108,20 @@
     #renting__furniture__showcase {
         display: flex;
         flex: 1;
+        
     }
-
+/*  */
     #renting__furniture__chooseRental {
-        padding: 12px;
-        margin: 2px;
+        padding: 32px;
+        /* margin: 2px 43px; */
         font-size: 17px;
-        /* text-align: center; */
+        text-align: center;
     }
 
     #renting__furniture__info {
         display: flex;
         flex: 1;
+        padding: 5px;
         justify-content: space-evenly;
     }
 
@@ -130,40 +137,43 @@
         /* ins */
         height: 39vh;
         width: 100%;
-        padding: 7px;
+        /* padding: 7px; */
     }
-
+/* div padding and margin */
     .renting__furniture__showcase__info {
-    font-family: 'Roboto Mono', monospace;
-        padding: 9px;
-        margin-left: 12px;
-        margin: 5px;
-        width: 100%;
+        font-family: 'Roboto Mono', monospace;
+        /* padding: 15px; */
+        margin: 15px 23px;
+        width:50%;
         height: auto;
         /* border: 1px solid coral; */
         box-shadow: 0px 0px 1px 0px;
-        border-radius: 13px;
+        border-radius: 3px;
         background-color: white;
         font-weight: italic;
-        font-size: 22px;
+        font-size: 16px;
     }
 
 /* filter left button */
 .filter__right__btn{
+    /* filter  */
     margin-left: 20px;
-    border: 1px solid #333333;
-    box-shadow: 1px 1px 1px 1px;
     border: 1px solid transparent;
+    background-color: white;
+    cursor: pointer;
 }
 
 .filter__left__btn{
+    /* reset */
     float: right;
+    font-size: 12px;
     border: 1px solid transparent;
-    background-color: #ffffff;
-    /* box-shadow: 1px 1px 1px 1px; */
-    margin-left: 82px;
-    clear: both;
+    background-color: white;
+    margin-left: 82px;    
+    cursor: pointer;
 }
+
+
     /* navbar */
     #renting__furniture__navbar {
         border: 1px solid whitesmoke;
@@ -199,16 +209,23 @@
         /* background-color: red; */
         border-radius: 15px;
     }
+    .furniture__filter__suggestion > p +  p{
+        color: #333333;
+        font-size: 18px;
+    }
 
     .furniture__checkbox__suggestion {
-        position: relative;
+        /* position: relative; */
         font-size: 22px;
         border: 1px solid dodgerblue;
         border-radius: 5px 5px;
+        align-items: center;
         color: #333333;
         background-color: white;
-        width: 70%;
-        margin: 420px;
+        width: 100%;
+        /* margin: 20px 134px; */
+        padding-left: 30px;
+        font-family: 'Roboto Mono', monospace;
     }
 
     .furniture__checkbox__suggestion>input {
@@ -218,12 +235,11 @@
         width: 65px;
         border-radius: 5px 5px 5px 5px;
         height: 30px;
-        margin-left: 312px;
     }
 /* kitchen icon */
     .checks {
-        padding: 12px;
-        zoom: 1.3;
+        padding: 2px;
+        zoom: 1.7;
         background-color: turquoise;
     }
     /* icons truck */
@@ -239,12 +255,16 @@
     }
     /* choonse rental tenure */ 
     #renting__furniture__increments +    p > span{
-        /* margin-right:12px; */
-        font-size: 18px;
+        font-size: 15px;
         margin-left: 32px;
         padding-left: 8 32px;
         
     }
+
+
+    .heading {
+        padding: 10px;                    
+     } 
 </style>
 
 <body>
@@ -259,8 +279,7 @@
             </div>
             <div id="furniture__chooseRental">
                 <div id="furniture__filter__reset">
-                    <p>choose Rental Tenure <i id="furniture__renting__info" style="font-size: 22px;margin-left: 12vh;padding:3px;border: 1px solid dodgerblue;border-radius: 15px;" class="fa fa-info" aria-hidden="true"></i>
-                    </p>
+                    <p>choose Rental Tenure </p>
                     <input id="renting__furniture__increments" name="renting__furniture__increments" type="range"
                         min="0" max="100" />
                     <p>
@@ -327,7 +346,7 @@
                         <p>Mottress</p>
                     </div>
                     <hr>
-                    <button id="showless">show less </button>
+                    <button id="showless">show Less </button>
                 </div>
             </div>
             <div id="furniture__chooseRental">
@@ -344,13 +363,13 @@
             <div id="furniture__chooseRental">
                 <!-- <div id="furniture__filter__reset"> -->
                 <div class="furniture__filter__suggestion">
-                    <h5> What you want us to <br/> launch us ?</h5>
-                    <h6> suggest a product</h6>
+                    <p> What you want us to <br/> launch us ?</p>
+                    <p> suggest a product</p>
                     
                     <div class="furniture__checkbox__suggestion" id="furniture__checkbox">
-                        <input type="text " placeholder="suggestion" />
-                        <input  type="submit" value="submit">
-                    </div>
+                            <input type="text " placeholder="suggestion" />
+                            <input  type="submit" value="submit" />
+                        </div>
                 </div>
                 <!-- </div> -->
             </div>
@@ -360,16 +379,16 @@
         <div id="renting__furniture__chooseRental">
             <div id="renting__furniture__navbar">
                 <input type="submit" value="Bedroom" placeholder="Bedroom">
-                <!-- <input type="submit" placeholder="Bedroom"> -->
-                <!-- <button>X</button> -->
+                <button>X</button>
             </div>
 
             <div id="renting__furniture__showcase">
                 <div class="renting__furniture__showcase__info">
                     <img src="./download.jpeg" alt="bedroom" />
+
                     <div>
-                        <p> set 2 single xl (6.23x) ortho... </p>
-                        <hr style="color: whitesmoke;">
+                        <p class="heading"> set 2 single xl (6.23x) ortho... </p>
+                        <hr style="color: #e7e7e7;">
                         <div id="renting__furniture__info">
                             <p class="renting__furniture__price"> rs 609/mo </p>
                             <i class="fa fa-truck trucks" aria-hidden="true"></i>
@@ -380,7 +399,7 @@
                 <div class="renting__furniture__showcase__info">
                     <img src="./download.jpeg" alt="bedroom" />
                     <div>
-                        <p> set 2 single xl (6.23x) ortho... </p>
+                        <p class="heading"> set 2 single xl (6.23x) ortho... </p>
                         <hr style="color: whitesmoke;">
                         <div id="renting__furniture__info">
                             
@@ -393,7 +412,7 @@
                 <div class="renting__furniture__showcase__info">
                     <img src="./download.jpeg" alt="bedroom" />
                     <div>
-                        <p> set 2 single xl (6.23x) ortho... </p>
+                        <p class="heading"> set 2 single xl (6.23x) ortho... </p>
                         <hr style="color: whitesmoke;">
 
                         <div id="renting__furniture__info">
@@ -413,7 +432,7 @@
                 <div class="renting__furniture__showcase__info">
                     <img src="./download.jpeg" alt="bedroom" />
                     <div>
-                        <p> set 2 single xl (6.23x) ortho... </p>
+                        <p class="heading"> set 2 single xl (6.23x) ortho... </p>
                         <hr style="color: whitesmoke;">
                         <div id="renting__furniture__info">
                             <p class="renting__furniture__price"> rs 609/mo </p>
@@ -425,7 +444,7 @@
                 <div class="renting__furniture__showcase__info">
                     <img src="./download.jpeg" alt="bedroom" />
                     <div>
-                        <p> set 2 single xl (6.23x) ortho... </p>
+                        <p class="heading"> set 2 single xl (6.23x) ortho... </p>
                         <hr style="color: whitesmoke;">
                         <div id="renting__furniture__info">
                             <p class="renting__furniture__price"> rs 609/mo </p>
@@ -437,7 +456,7 @@
                 <div class="renting__furniture__showcase__info">
                     <img src="./download.jpeg" alt="bedroom" />
                     <div>
-                        <p> set 2 single xl (6.23x) ortho... </p>
+                        <p class="heading"> set 2 single xl (6.23x) ortho... </p>
                         <hr style="color: whitesmoke;">
                         <div id="renting__furniture__info">
                             <p class="renting__furniture__price"> rs 609/mo </p>
@@ -455,7 +474,7 @@
                 <div class="renting__furniture__showcase__info">
                     <img src="./download.jpeg" alt="bedroom" />
                     <div>
-                        <p> set 2 single xl (6.23x) ortho... </p>
+                        <p class="heading"> set 2 single xl (6.23x) ortho... </p>
                         <hr style="color: whitesmoke;">
                         <div id="renting__furniture__info">
                             <p class="renting__furniture__price"> rs 609/mo </p>
@@ -467,7 +486,7 @@
                 <div class="renting__furniture__showcase__info">
                     <img src="./download.jpeg" alt="bedroom" />
                     <div>
-                        <p> set 2 single xl (6.23x) ortho... </p>
+                        <p class="heading"> set 2 single xl (6.23x) ortho... </p>
                         <hr style="color: whitesmoke;">
                         <div id="renting__furniture__info">
                             <p class="renting__furniture__price"> rs 609/mo </p>
@@ -479,7 +498,7 @@
                 <div class="renting__furniture__showcase__info">
                     <img src="./download.jpeg" alt="bedroom" />
                     <div>
-                        <p> set 2 single xl (6.23x) ortho... </p>
+                        <p class="heading"> set 2 single xl (6.23x) ortho... </p>
                         <hr style="color: whitesmoke;">
                         <div id="renting__furniture__info">
                             <p class="renting__furniture__price"> rs 609/mo </p>
