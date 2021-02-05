@@ -1,0 +1,84 @@
+/* Footer first container css */
+
+body {
+    font-family: Muli,sans-serif;
+}
+.footerMainContainer {
+    background-color: #f5f7fa;
+    display: flex;
+    flex-direction: column;
+}
+.firstContainer{
+    margin: 90px 90px 0 90px;
+}
+h3 {
+    color: #6d6d6d;
+    font-size: 17px;
+    line-height: 1em;
+}
+p {
+    color: #787878;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+/* Footer second container css */
+
+.secondContainer{
+    margin: 20px 90px 0 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    font-size: 19px;
+}
+p.hoverOnP:hover, p.hoverOnP:active {
+    text-decoration: underline;
+}
+.secondContainerBox4 p {
+    cursor: pointer;
+}
+.chatBox {
+    display: flex;
+    justify-content:space-evenly;
+    width: 60%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 5px;
+}  
+.downloadApp {
+    display: flex;
+}
+
+/* footer third container*/
+.line {
+    border-top: 1px solid #6d6d6d;
+    margin: 20px 90px 20px 90px;
+}
+.footerEnd {
+    margin: 20px 90px 40px 90px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 13px;
+    color: #787878;
+}
+.footerEndIcons {
+    cursor: pointer;
+    display: flex;
+    margin-top: -20px;
+    margin-left: 80px;
+    align-items: center;
+}
+.roundIcon {
+    border: 1px solid #787878;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    text-align: center;
+    padding: 10px;
+}
+.goUp {
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+}

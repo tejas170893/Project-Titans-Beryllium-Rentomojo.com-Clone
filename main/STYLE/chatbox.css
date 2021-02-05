@@ -1,0 +1,109 @@
+.chatbox__btn{
+    position:fixed;
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    background-color: #DB3327;
+    left:25px;
+    bottom:25px;
+}
+.chatbox__btn img{
+    width:30px;
+    margin:15px;
+}
+.chatbox__unreveal{
+    width:380px;
+    height:0vh;
+    position:fixed;
+    bottom:100px;
+    left:25px;
+    border-radius: 10px;
+    transition: 0.5s;
+    z-index: 1;
+    display: flex;   
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: none;
+    background: linear-gradient #DB3327 50%, white 50%;
+}
+.chatbox__reveal{
+    height:70vh;
+    transition: 0.5s;
+    border:1px solid #f2f2f2;
+    background-color: #f2f2f2 ;
+}
+
+.chatbox_head {
+    
+    top: 0;
+    width: 97%;
+    height: 50px;
+    background-color: #DB3327 ;
+    color: #f2f2f2;
+    text-align: left;
+    padding-top: 10px ;
+    padding-left: 10px ;
+    font-size: 20px;
+    font-weight: 600;
+}
+.chatbox__one {
+    margin: 5px auto;
+}
+
+.chatbox__two{
+    height: 30px;
+    padding: 5px;
+    width:300px;
+    margin: 2px  auto;
+    background-color: #F5F7FA;
+    
+    display: none;
+    border-radius: 10px;
+  
+}
+
+.chatbox__three{
+    height: auto;
+    padding: 5px;
+    width:300px;
+    margin: 2px  auto;
+    background-color: #F5F7FA;
+  
+    display: none;
+    border-radius: 10px;
+   
+}
+
+.chatbox__three button {
+    width: 80%;
+    margin: 5px 5%;
+    background-color: #ffffff;
+    color: #DB3327;
+    border: solid #DB3327 1px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.chatbox__logo{
+    width:180px;
+    margin-left:-15px;
+}
+
+.scrollUp__btn{
+    position: fixed;
+    bottom:10px;
+    right:25px;
+    width:55px;
+    height:55px;
+    border-radius: 30px;
+    border:none;
+    outline:none;
+    border:1px solid #e6e6e6;
+    box-shadow: 1px 2px 5px #d9d9d9;
+    background-color: white;
+    display: none;
+}
+
+.scrollUp__btn__reveal{
+    display: block;
+}
