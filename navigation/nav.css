@@ -9,7 +9,6 @@ nav {
     z-index: 3;
     top: 0;
 }
-
 .nav__first{
     display: inline-flex;
     background-color: #ffffff;
@@ -104,7 +103,7 @@ nav i {
 }       
 
 .nav__second__options .dropbtn {
-    font-size: 16px;  
+    font-size: 14px;  
     border: none;
     outline: none;
     color: #8a8a8b;
@@ -123,6 +122,13 @@ nav i {
     left: 0;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    font-size: 14px; 
+}
+
+.dropdown__content span {
+    font-size: 12px; 
+    color: #8a8a8b;
+    font-weight: 500;
 }
 
 .nav__second__options:hover .dropbtn{

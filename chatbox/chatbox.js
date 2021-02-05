@@ -6,13 +6,13 @@ function showChatbox(){
     document.querySelector(".chatbox__unreveal").classList.toggle("chatbox__reveal")
     if(document.querySelector(".chatbox__icon").src == src)
     {
-        document.querySelector(".chatbox__icon").src = "../IMAGE/down_arrow.svg"
+        document.querySelector(".chatbox__icon").src = "down_arrow.svg"
     }
     else
     {
-        document.querySelector(".chatbox__icon").src = "../IMAGE/chat_icon.svg"
+        document.querySelector(".chatbox__icon").src = "chat_icon.svg"
     }
-    
+
     chatPlay()
 }
 
