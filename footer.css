@@ -57,7 +57,7 @@ p.hoverOnP:hover, p.hoverOnP:active {
 .footerEnd {
     margin: 20px 90px 40px 90px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     font-size: 13px;
     color: #787878;
 }
@@ -65,7 +65,7 @@ p.hoverOnP:hover, p.hoverOnP:active {
     cursor: pointer;
     display: flex;
     margin-top: -20px;
-    margin-left: -80px;
+    margin-left: 80px;
     align-items: center;
 }
 .roundIcon {
@@ -83,3 +83,5 @@ p.hoverOnP:hover, p.hoverOnP:active {
     justify-content: center;
 }
 
+
+/* <i class="fas fa-arrow-alt-circle-up" style="font-size: 30px; color: #DC3226; cursor: pointer;"></i> */
