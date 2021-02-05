@@ -1,0 +1,134 @@
+{
+    "products": [
+      {"img":"https://p.rmjo.in/moodShot/3jdbzgfq-1024x512.jpg",
+        "price":"599",
+        "type":"Refrigerators & Freezers",
+        "category":"Appliacnces",
+        "name":"Single Door Fridge",
+        "id":"76"
+      },
+      {"img":"https://p.rmjo.in/moodShot/3jdbzgfq-1024x512.jpg",
+        "price":"919",
+        "type":"Refrigerators & Freezers",
+        "category":"Appliances",
+        "name":"Double Door Fridge (240 Litre)",
+        "id":"77"
+      },
+      {"img":"https://p.rmjo.in/moodShot/za5mkxsn-1024x512.jpg",
+        "price":"349",
+        "type":"Refrigerators & Freezers",
+        "category":"Appliacnces",
+        "name":"Mini Fridge",
+        "id":"78"
+      },
+
+      {"img":"https://p.rmjo.in/moodShot/7o3sve1q-1024x512.jpg",
+        "price":"999",
+        "type":"Televisions",
+        "category":"Appliacnces",
+        "name":"Smart LED TV - 43",
+        "id":"79"
+      },
+
+      {"img":"https://p.rmjo.in/moodShot/xkn0ulxv-1024x512.jpg",
+        "price":"499",
+        "type":"Televisions",
+        "category":"Appliacnces",
+        "name":"LED TV - 32",
+        "id":"80"
+      },
+      {"img":"https://p.rmjo.in/moodShot/dh46dawc-1024x512.jpg",
+        "price":"749",
+        "type":"Televisions",
+        "category":"Appliacnces",
+        "name":"LED TV - 40",
+        "id":"81"
+      },
+      {"img":"https://p.rmjo.in/moodShot/6r73fmhx-1024x512.jpg",
+        "price":"699",
+        "type":"Televisions",
+        "category":"Appliacnces",
+        "name":"Smart LED TV - 32",
+        "id":"82"
+      },
+
+
+      {"img":"https://p.rmjo.in/moodShot/8loxjaob-1024x512.jpg",
+        "price":"1549",
+        "type":"Air Conditioners",
+        "category":"Appliacnces",
+        "name":"Voltas Inverter Air Conditioner 1 Ton",
+        "id":"83"
+      },
+
+      {"img":"https://p.rmjo.in/moodShot/0ob00dpp-1024x512.jpg",
+        "price":"1399",
+        "type":"Air Conditioners",
+        "category":"Appliacnces",
+        "name":"Air Conditioner 1 Ton",
+        "id":"84"
+      },
+
+      {"img":"https://p.rmjo.in/moodShot/xod4977s-1024x512.jpg",
+        "price":"1649",
+        "type":"Air Conditioners",
+        "category":"Appliacnces",
+        "name":"Air Conditioner 1.5 Ton",
+        "id":"85"
+      },
+
+      {"img":"https://p.rmjo.in/moodShot/qkfmlj1u-1024x512.jpg",
+        "price":"359",
+        "type":"Water & Air Purifiers",
+        "category":"Appliacnces",
+        "name":"Air Purifier",
+        "id":"86"
+      },
+
+      {"img":"https://p.rmjo.in/moodShot/vp7kxd30-1024x512.jpg",
+        "price":"799",
+        "type":"Water & Air Purifiers",
+        "category":"Appliacnces",
+        "name":"Kent Pride Plus Water Purifier",
+        "id":"87"
+      },
+      {"img":"https://p.rmjo.in/moodShot/sm7pyjdj-1024x512.jpg",
+        "price":"449",
+        "type":"Microwaves & induction",
+        "category":"Appliacnces",
+        "name":"Convection Microwave 20L",
+        "id":"88"
+      },
+
+      {"img":"https://p.rmjo.in/moodShot/v17t6j3e-1024x512.jpg",
+        "price":"569",
+        "type":"Washing Machines",
+        "category":"Appliacnces",
+        "name":"Top Load Washing Machine",
+        "id":"89"
+      },
+      {"img":"https://p.rmjo.in/moodShot/7tdauysb-1024x512.jpg",
+        "price":"389",
+        "type":"Washing Machines",
+        "category":"Appliacnces",
+        "name":"Semi Automatic Washing Machine",
+        "id":"90"
+      },
+
+      {"img":"https://p.rmjo.in/moodShot/j3uvwk9p-1024x512.jpg",
+        "price":"449",
+        "type":"Air Cooler",
+        "category":"Appliacnces",
+        "name":"Air Cooler 35 L",
+        "id":"92"
+      },
+
+      {"img":"https://p.rmjo.in/moodShot/z5d990k8-1024x512.jpg",
+        "price":"1119",
+        "type":"Diswashers",
+        "category":"Appliacnces",
+        "name":"IFB Dishwasher",
+        "id":"93"
+      }
+    ]
+}
