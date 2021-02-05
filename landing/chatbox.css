@@ -19,7 +19,7 @@
     left:25px;
     border-radius: 10px;
     transition: 0.5s;
-    z-index: 1;
+    z-index: 3;
     display: flex;   
     flex-direction: column;
     overflow-y: auto;
