@@ -1,0 +1,63 @@
+body {
+    font-family: Muli,sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.navContainer {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    position: fixed;
+    background-color: #ffffff;
+}
+.innerContainer {
+    margin-left: 90px;
+    margin-right: 90px;
+    display: flex;
+    height: 8vh;
+    align-items: center;
+    margin-top: 1vh;
+}
+.info {
+    width: 105vh;
+    margin-left: 60vh;
+    display: flex;
+    justify-content: space-between;
+}
+.checkout {
+    font-size: 14px;
+    color: #1DBDC0;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-around;
+    width: 25vh;
+    align-items: center;
+}
+.line {
+    border-top: 1px solid #1dbdc0;
+    width: 3vh;
+}
+.line1 {
+    border-top: 1px solid #BABABA;
+    width: 3vh;
+}
+.verification {
+    font-size: 14px;
+    color: #BABABA;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-around;
+    width: 25vh;
+    align-items: center;
+}
+.delivery {
+    font-size: 14px;
+    color: #BABABA;
+    font-weight: 300;
+    display: flex;
+    width: 25vh;
+    align-items: center;
+}
+.dlv {
+    margin-left: 15px;
+}
