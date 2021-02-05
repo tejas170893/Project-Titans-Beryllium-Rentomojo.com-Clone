@@ -21,7 +21,6 @@ nav {
     margin: auto 15px;
     /* border: 1px black solid;  */
 }
-
 .nav__first >div:nth-child(1){
     height: 45%;
     width: 13%;
@@ -30,7 +29,6 @@ nav {
     width: 100%;
     height: 100%;
 }
-
 .search__container{
     display: inline-flex;
     width: 40%;
@@ -44,7 +42,6 @@ nav {
     margin-left: 20px;
     overflow: hidden;
 }
-
 .search__box{
     border: 0;
     margin-left: 10px;
@@ -54,11 +51,9 @@ nav {
 .search__box:focus {
     outline: none;
 } 
-
 .search__icon {
     padding: 0.5rem;
 }
-
 .nav__first button {
     background-color: #dc3226;
     color: #ffffff;
@@ -66,19 +61,16 @@ nav {
     padding: 10px;
     border-radius: 5px;
 }
-
 .nav__first button:hover {
     background-color: #ffffff;
     color:  #dc3226;
     text-decoration: underline;
     border: 0.09em #dc3226 solid;
 }
-
 nav i {
     margin-right: 5px;
     margin-left: 3px;
 }
-
 .nav__second{
     width: 100%;
     overflow: hidden;
@@ -89,7 +81,6 @@ nav i {
    
     font-weight: 600;
 }
-
 .nav__second__options {
     
     padding-bottom: 0;
@@ -101,7 +92,6 @@ nav i {
     margin-left: 8px;
     margin-right: 8px;
 }       
-
 .nav__second__options .dropbtn {
     font-size: 14px;  
     border: none;
@@ -113,7 +103,6 @@ nav i {
  
 
 } 
-
 .dropdown__content {
     display: none;
     position: absolute;
@@ -130,7 +119,6 @@ nav i {
     color: #8a8a8b;
     font-weight: 500;
 }
-
 .nav__second__options:hover .dropbtn{
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -138,8 +126,6 @@ nav i {
     border-bottom: 5px#1d1d1d solid;
     color: #1d1d1d;
 }
-
-
 .nav__second__options:hover .dropdown__content {
     display: block;
 } 
