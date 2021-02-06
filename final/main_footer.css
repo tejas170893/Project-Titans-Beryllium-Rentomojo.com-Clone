@@ -1,3 +1,4 @@
+<<<<<<< HEAD:final/main_footer.css
 /* Footer first container css */
 body {
     font-family: Muli,sans-serif;
@@ -78,3 +79,84 @@ p.hoverOnP:hover, p.hoverOnP:active {
     display: flex;
     justify-content: center;
 }
+=======
+body {
+    font-family: Muli,sans-serif;
+}
+.footer_MainContainer {
+    background-color: #f5f7fa;
+    display: flex;
+    flex-direction: column;
+}
+.footer_firstContainer{
+    margin: 90px 90px 0 90px;
+}
+.footer_h3 {
+    color: #6d6d6d;
+    font-size: 17px;
+    line-height: 1em;
+}
+.footer_p {
+    color: #787878;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+/* Footer second container css */
+
+.footer_secondContainer{
+    margin: 20px 90px 0 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    font-size: 19px;
+}
+p.footer_p:hover, p.footer_p:active {
+    text-decoration: underline;
+}
+.footer_secondContainerBox4 p {
+    cursor: pointer;
+}
+.footer_chatBox {
+    display: flex;
+    justify-content:space-evenly;
+    width: 60%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 5px;
+}  
+.footer_downloadApp {
+    display: flex;
+}
+
+/* footer third container*/
+.footer_line {
+    border-top: 1px solid #6d6d6d;
+    margin: 20px 90px 20px 90px;
+}
+.footerEnd {
+    margin: 20px 90px 40px 90px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 13px;
+    color: #787878;
+}
+.footerEndIcons {
+    cursor: pointer;
+    display: flex;
+    margin-top: -20px;
+    margin-left: -80px;
+    align-items: center;
+}
+.footer_roundIcon {
+    border: 1px solid #787878;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    text-align: center;
+    padding: 10px;
+}
+
+
+>>>>>>> 834e80fa8c90c97c818d775267a7c32ebe04c864:footer.css

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    body{
+        background-color:rgb(233,238,243);
+        margin:0;
+        padding:0;
+    }
+    .nav__container *{
+        margin:0;
+        padding:0;
+        
+    }
+    .nav__container{
+        background-color:white;
+        
+        padding:10px 0px;
+    }
+    .nav{
+      list-style-type: none;
+    }
+    .nav>li{
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .nav img{
+        height: 40px;
+        vertical-align: middle;
+        border-radius: 3px;
+    }
+    hr{
+        margin:0px
+    }
+    .checkout__body{
+        display:flex;
+        width:82vw;
+        justify-content: space-between;
+        margin: auto;
+    }
+    .left__container{
+        /* border:1px solid; */
+        width: 55vw;
+        /* height: 40px; */
+        margin-top: 10px;
+        font-family: sans-serif;
+        font-size:12px;
+        color: #5c5b5b;
+        
+    }
+    .left__one{
+        height: 130px;
+        /* border: solid 1px; */
+        background-color: white;
+        border-radius: 13px;
+        padding:5px 0 0 25px;
+    }
+    .left__one h3{
+        display: inline-block;
+        /* margin-right:50px; */
+    }
+    .bottom__one{
+        display: flex;
+        align-items: center;
+        margin-top:15px;
+    }
+    .bottom__one>.small{
+        vertical-align: center;
+        /* border:1px solid; */
+        width: 290px;
+        font-size:12px;
+    }
+    .button__bottom{
+        margin:0px 0 0 110px;
+        border: 1px solid;
+        padding: 5px 10px;
+        height:15px;
+        width:fit-content;
+        background-color:#DC3226;
+        color:white;
+        border-radius:3px
+    }
+    .left__two{
+        color: #333333;
+        height:250px;
+        width:100%;
+        background-color:white;
+        border-radius: 13px;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top:18px;
+    }
+    .left__two>div{
+        width:45%;
+        /* border:1px solid; */
+    }
+    .left__mid{
+        margin-top:20px;
+        display: flex;
+        border:1px solid #e2eaf0;
+        padding:18px 8px;
+        justify-content: space-between;
+        border-radius: 10px;
+    }
+    .left__bottom{
+        margin-top:70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        height:28px;
+        padding: 8px 13px;
+        border:1px solid;
+        color: white;
+        background-color:#DC3226
+    }
+    .left__three{
+        margin-top:20px;
+        padding:22px;
+        font-size: 14px;
+        /* border:1px solid; */
+        background-color: white;
+        border-radius:13px;
+    }
+    .left__four{
+        margin-top:20px;
+        padding:22px;
+        font-size: 14px;
+        /* border:1px solid; */
+        background-color: white;
+        border-radius:13px;
+    }
+    
+    .right__top{
+        padding:18px 8px;
+        margin-top:49px;
+        border-radius:10px;
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid #e2eaf0;
+    }
+    .Suggested__Addons{
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .right__container>*{
+        font-family:sans-serif;
+        border-radius: 10px;
+        margin-bottom:25px ;
+    }
+    .right__container{
+        width: 24vw;
+        margin-top: 10px;
+    }
+    .right__container>.right__one{
+        padding:15px  ;
+        background-color:white;
+
+
+    }
+    .right__container>.outer{
+        width:100%;
+        height:33vh;
+        background-color:rgb(212,224,233);
+    }
+    .outer>.inner{
+        border-radius: 10px 10px 15px 15px;
+        height: 70%;
+        background-color:white;
+        padding:15px
+    }
+    .inner>.content{
+        height:57%;
+        /* border: 1px solid; */
+        display:flex;
+        justify-content: space-between;
+    }
+    .content__left img{
+        width:100%;
+        height:100%;
+        border-radius:3px;
+    }
+    .content__left{
+        width:30%;
+        height:100%;
+    }
+    .content__right{
+        width:65%;
+        height:100%;
+    }
+    .content__right>p{
+        margin:0;
+        display: inline-block;
+        vertical-align:middle;
+        overflow:hidden; 
+        white-space:nowrap; 
+        text-overflow: ellipsis;
+        width: 90%;
+        color: #333333;
+        font-weight:600;
+    }
+    .content__rightul{
+        list-style-type:none;
+        margin:0;
+        padding:0;
+    }
+    .content__rightul>li{
+        display: inline-block;
+    }
+    .content__rightli>p{
+        margin:16px 45px 2px 0px;
+        color: #9c9c9c;
+        font-size:10px;
+    }.content__rightli>span{
+        color:#333;
+        font-size:12px;
+    }
+    .quantity__time{
+        margin-top: 35px;
+        /* border:1px solid; */
+    }
+    .quantity__time>span{
+        border: 1px solid #e2eaf0;
+        border-radius:3px;
+        margin:0 5px 0 0;
+        color: #333333;
+        font-size:11px;
+    }
+    .span__1{
+        padding:8px 10px;
+    }
+    .span__2{
+        padding:8px 45px;
+    }
+    .outer__text{
+        padding:12px 17px ;
+        font-size: 12px;
+        color:#333333;
+    }
+    .white{
+        color:white;
+    }
+
+    .circle__container>div{
+            
+            position:absolute;
+            /* border: 1px solid; */
+        }
+        .circle__container{
+            position: relative;
+            /* border: 1px solid; */
+            width:200px;
+            height:50px;
+        }
+        .div1{
+            left:0px;
+            z-index: 3;
+        }
+        .div1> img{
+            width: 25%;
+            height:25%;
+            border: 1px solid #e2eaf0;
+            border-radius:50%;
+
+        }
+        .div2{
+            left:37px;
+            z-index: 2;
+        }
+        .div2> img{
+            width: 30%;
+            height:30%;
+            border: 1px solid #e2eaf0;
+            border-radius:50%;
+
+        }
+        .div3{
+            left:70px;
+            z-index: 1;
+        }
+        .div3> img{
+            width: 40%;
+            height:40%;
+            border: 1px solid #e2eaf0;
+            border-radius:50%;
+            
+        }
+        .div4{
+            left:110px;
+            z-index: 0;
+        }
+        .div4> img{
+            margin: 3px;
+            width: 53%;
+            height:53%;
+            border: 1px solid #e2eaf0;
+            border-radius:50%;
+            
+        }
+  </style>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <div class="nav__container">
+
+          <ul class="nav">
+            <li class="nav__items">
+                <img src="rentomojo.png" alt="">
+              </li>
+            <li class="nav__items">
+                <div>Checkout</div>
+            </li>
+            <li class="nav__items">
+                <div>Verification</div>
+            </li>
+            <li class="nav__items">
+                <div>Delivery</div>
+            </li>
+          </ul>
+    </div>
+    <hr>
+    <div class="checkout__body">
+        <div class="left__container">
+            <div class="left__one">
+                <h3 >Suggested Addons</h3>
+                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                <h3>0 of 4 added</h3>
+                <div class="bottom__one">
+                    <div class="circle__container">
+                        <div class="div1">
+                            <img src="https://p.rmjo.in/productSquare/4ot3ezat-250x250.jpg" alt=""/>
+                        </div>
+                        <div class="div2">
+                            <img src="https://p.rmjo.in/productSquare/bqema5lu-250x250.jpg" alt="">
+                        </div>
+                        <div class="div3">
+                            <img src="https://p.rmjo.in/productSquare/0l34fkrj-250x250.jpg" alt="">
+                        </div>
+                        <div class="div4">
+                            <img src="https://p.rmjo.in/productSquare/cw9re3z0-250x250.jpg" alt="">
+                        </div>
+                        
+                    </div>
+                    <small class="small">
+                        These addons are curated to give the best experience with the products in your cart.
+                    </small>
+                    <div class="button__bottom">
+                        Choose & Add
+                    </div>
+                </div>
+            </div>
+
+            <div class="left__two">
+                <div class="left">
+                    <h3><i class="fas fa-sticky-note">&nbsp</i>Order Summary</h3>
+                    <div class="left__mid">
+                        <small>Refundable Deposit</small>
+                        <small>&#8377 900</small>
+                    </div>
+                    <div class="left__bottom">
+                        <div>
+                            <span>&#8377 8738</span>
+                            <br>
+                            <small>Refundable Deposit</small>
+                        </div>
+                        <div>
+                            <h3>Proceed</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="right__top">
+                        <small>Total Monthly Rent</small>
+                        <small>&#8377 229/Mo</small>
+                    </div>
+                    <small><i class="fa fa-calendar" aria-hidden="true"></i>
+                        Not to be paid now. Pay post usage every month.</small>
+                </div>
+            </div>
+
+            <div class="left__three"> <i class="fas fa-user-check"></i>&nbsp Verify Your Phone Number</div>
+            <div class="left__four"><i class="fas fa-map-marker-alt"></i>&nbsp &nbsp Address & Payment</div>
+
+        </div>
+
+        <div class="right__container">
+            <div class="right__one">
+                
+                <span class="fa-stack" style="vertical-align: center;">
+                    <i class="fa fa-certificate fa-stack-2x"></i>
+                    <i class="white fa fa-percent fa-stack-1x"></i>
+                  </span>
+                <!-- <i class="fa fa-tag fa-stack-1x fa-inverse"></i> -->
+                <span class="text">Have a coupon code?</span>
+                <span>
+                    <i class="fas fa-angle-right fa-1x"></i>
+                </span>
+            </div>
+            <div class="outer">
+                <div class="inner">
+                    <div class="content">
+                        <div class="content__left">
+                            <img src="https://p.rmjo.in/productSquare/hint8o7v-500x500.jpg" alt="">
+                        </div>
+                        <div class="content__right">
+                            <p>Dell inspiron tera maaka bhosda </p><i class="fa fa-trash" aria-hidden="true"></i>
+                            <ul class="content__rightul">
+                                <li class="content__rightli">
+                                    <p>Rent</p>
+                                    <span>&#8377</span>
+                                </li>
+                                <li class="content__rightli">
+                                    <p>Deposit</p>
+                                    <span>&#8377</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="quantity__time">
+                        <span class="span__1">
+                            <i class="fas fa-minus"></i>
+                            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                            1
+                            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+                            <i class="fas fa-plus"></i>
+                        </span>
+                        <span class="span__2">3 Months</span>
+                    </div>
+                </div> 
+                <div class="outer__text">
+                    <i class="fas fa-truck">&nbsp</i><span> Free delivery by 6th Feb 2021</span>
+                </div>
+            </div> 
+            <div class="outer">
+                <div class="inner">
+                    <div class="content">
+                        <div class="content__left">
+                            <img src="https://p.rmjo.in/productSquare/hint8o7v-500x500.jpg" alt="">
+                        </div>
+                        <div class="content__right">
+                            <p>Dell inspiron tera maaka bhosda </p><i class="fa fa-trash" aria-hidden="true"></i>
+                            <ul class="content__rightul">
+                                <li class="content__rightli">
+                                    <p>Rent</p>
+                                    <span>&#8377</span>
+                                </li>
+                                <li class="content__rightli">
+                                    <p>Deposit</p>
+                                    <span>&#8377</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="quantity__time">
+                        <span class="span__1">
+                            <i class="fas fa-minus"></i>
+                            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                            1
+                            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+                            <i class="fas fa-plus"></i>
+                        </span>
+                        <span class="span__2">3 Months</span>
+                    </div>
+                </div> 
+                <div class="outer__text">
+                    <i class="fas fa-truck">&nbsp</i><span> Free delivery by 6th Feb 2021</span>
+                </div>
+            </div> 
+            <div class="outer">
+                <div class="inner">
+                    <div class="content">
+                        <div class="content__left">
+                            <img src="https://p.rmjo.in/productSquare/hint8o7v-500x500.jpg" alt="">
+                        </div>
+                        <div class="content__right">
+                            <p>Dell inspiron tera maaka bhosda </p><i class="fa fa-trash" aria-hidden="true"></i>
+                            <ul class="content__rightul">
+                                <li class="content__rightli">
+                                    <p>Rent</p>
+                                    <span>&#8377</span>
+                                </li>
+                                <li class="content__rightli">
+                                    <p>Deposit</p>
+                                    <span>&#8377</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="quantity__time">
+                        <span class="span__1">
+                            <i class="fas fa-minus"></i>
+                            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                            1
+                            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+                            <i class="fas fa-plus"></i>
+                        </span>
+                        <span class="span__2">3 Months</span>
+                    </div>
+                </div> 
+                <div class="outer__text">
+                    <i class="fas fa-truck">&nbsp</i><span> Free delivery by 6th Feb 2021</span>
+                </div>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>
