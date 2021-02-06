@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/249783f98b.js" crossorigin="anonymous"></script>
+<style>
+body{
+    background: url("https://i2.wp.com/rjheartnsoul.com/wp-content/uploads/2018/02/Rentomojo-3.png?resize=1024%2C548&ssl=1");
+}
+.loading__container{ 
+    height: 100vh;
+    width:100vw;
+    background-color: rgba(8, 8, 8, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid rgba(51, 73, 199, 0.2);
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/* --------------another animation-------------- */
+h1{
+  color: white;
+  text-align: center;
+}
+/* loading dots */
+h1{
+  color: white;
+  text-align: center;}
+.loading:after {
+  content: ' .';
+  animation: dots 1s steps(5, end) infinite;}
+@keyframes dots {
+  0%, 20% {
+    color: rgba(47, 79, 218, 0);
+    text-shadow:
+      .25em 0 0 rgba(0,0,0,0),
+      .5em 0 0 rgba(0,0,0,0);}
+  40% {
+    color: white;
+    text-shadow:
+      .25em 0 0 rgba(0,0,0,0),
+      .5em 0 0 rgba(0,0,0,0);}
+  60% {
+    text-shadow:
+      .25em 0 0 white,
+      .5em 0 0 rgba(0,0,0,0);}
+  80%, 100% {
+    text-shadow:
+      .25em 0 0 white,
+      .5em 0 0 white;}
+    }
+</style>
+</head>
+<body>
+<div class="loading__container">
+  <div id="loaded">
+    <div class="loader"></div>
+    <h1 class="loading">Processing Payment</h1>
+  </div>
+</div>
+
+<script >
+
+setTimeout(function(){
+            let load = document.querySelector("#loaded")
+            load.innerHTML = ""
+            html = `<div>
+   <h1> Payment Confirmed <i class="fas fa-check-circle"></i></h1>
+</div>`
+load.innerHTML = html
+         }, 4000)
+
+setTimeout(function(){
+            window.location.href ='payment.html';
+         }, 3500)
+</script>
+</body>
+</html>
